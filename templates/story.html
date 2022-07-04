@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Story{% endblock %}
+
+{% block content %}
+
+<h1>{{ story.generate( { "place": place, "adjective":adjective, "verb":verb, "noun":noun, "plural_noun":plural_noun } )
+    }}</h1>
+
+{% endblock %}
